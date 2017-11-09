@@ -13,6 +13,9 @@
 #ifndef HDR
 #define HDR "Cylinder.h"
 #endif
+#ifndef PI
+#pragma message("PI macro activated!")
+#endif
 
 extern int lower(int c);
 extern double volume(double r, double h);
@@ -32,6 +35,8 @@ int main(int argc, char *argv[]) {
 	printf("Macro int swap: %d, %d\nMacro double swap: %6g, %6g\n", a, b, c, d);
 	printf("volume of cylinder = %8g, base = %8g, lateral = %8g, area = %8g\n", volume(3.0, 8.0), base(3.0), lateral(3.0, 8.0), area(3.0, 8.0));
 	printf(tempFile(usr/tmp/), "newFile\n");
+	printf("%d\n", cat(1, 2));
+	printf("%d\n %s\n %s\n %s\n %d\n", __LINE__, __FILE__, __DATE__, __TIME__, __STDC__);
 	system("pause");
 	FOREVER {
 	    printf("Loading");    

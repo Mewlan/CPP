@@ -18,3 +18,6 @@
 #define swap(t, x, y) {t tmp; tmp = x; x = y; y = tmp;}
 #define past(front, back) front ## back
 #define tempFile(dir) #dir "%s"
+#define cat(x, y)	x ## y
+# /* means do nothing */
+	

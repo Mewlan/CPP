@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=3
 CompilerSettings=1000000100000000000000000
-UnitCount=5
+UnitCount=7
 
 [VersionInfo]
 Major=1
@@ -92,6 +92,26 @@ BuildCmd=
 
 [Unit5]
 FileName=..\..\..\Desktop\新建文件夹\lower.h
+CompileCpp=0
+Folder=IWFoundation
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=..\IWMath\Cylinder\Cylinder.c
+CompileCpp=0
+Folder=IWFoundation
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit7]
+FileName=..\IWMath\Cylinder\Cylinder.h
 CompileCpp=0
 Folder=IWFoundation
 Compile=1
