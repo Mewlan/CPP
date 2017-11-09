@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o CPPCtrl.o ../../../Desktop/新建文件夹/lower.o
-LINKOBJ  = main.o CPPCtrl.o ../../../Desktop/新建文件夹/lower.o
+OBJ      = main.o CPPCtrl.o ../../../Desktop/新建文件夹/lower.o ../IWMath/Cylinder/Cylinder.o
+LINKOBJ  = main.o CPPCtrl.o ../../../Desktop/新建文件夹/lower.o ../IWMath/Cylinder/Cylinder.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -32,3 +32,6 @@ CPPCtrl.o: CPPCtrl.c
 
 ../../../Desktop/新建文件夹/lower.o: ../../../Desktop/新建文件夹/lower.c
 	$(CC) -c ../../../Desktop/新建文件夹/lower.c -o ../../../Desktop/新建文件夹/lower.o $(CFLAGS)
+
+../IWMath/Cylinder/Cylinder.o: ../IWMath/Cylinder/Cylinder.c
+	$(CC) -c ../IWMath/Cylinder/Cylinder.c -o ../IWMath/Cylinder/Cylinder.o $(CFLAGS)

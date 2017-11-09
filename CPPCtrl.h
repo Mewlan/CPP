@@ -16,3 +16,5 @@
 #endif
 #define ABSDIFF(a, b) ((a) > (b) ? (a) - (b) : (b) - (a))
 #define swap(t, x, y) {t tmp; tmp = x; x = y; y = tmp;}
+#define past(front, back) front ## back
+#define tempFile(dir) #dir "%s"
